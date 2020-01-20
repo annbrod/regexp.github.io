@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Regular Expressions</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header class="header">
         <img class="header__logo" src="https://pictures.s3.yandex.net/frontend-developer/dom_bom/logo.svg" alt="logo">
@@ -20,14 +22,19 @@
                 <h3>Форма регистрации</h3>
                 <fieldset class="form__fieldset">
                     <div class="form__field">
-                        <input class="form__input" type="text" name="name" pattern="^[А-ЯЁ][а-яё]+(?:-[а-яё]+)?$" placeholder="Имя" minlength="2" maxlength="20" required />
+                        <input class="form__input" type="text" name="name" pattern="^[А-ЯЁ][а-яё]+(?:-[а-яё]+)?$"
+                            placeholder="Имя" minlength="2" maxlength="20" required />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="email" name="name" pattern="^(\w{2,}[-.]*(\w[-.]*)*)*|\w[-.]\w+[-.]*@(\w{2,}\.)+\w{2,}$" placeholder="E-Mail" />
+                        <input class="form__input" type="email" name="name"
+                            pattern="^(\w{2,}[-.]*(\w[-.]*)*)*|\w[-.]\w+[-.]*@(\w{2,}\.)+\w{2,}$"
+                            placeholder="E-Mail" />
                         <span class="form__error">e-mail в формате: sega@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="tel" name="name" placeholder="Телефон" pattern="" minlength="" maxlength="" />
+                        <input class="form__input" type="tel" name="name" placeholder="Телефон"
+                            pattern="^(\+7\s?\(\d{3}\)\s?\d{3}-\d{2}-\d{2})|(\+7\s\d{3}-\d{3}-\d{2}-\d{2})|(\+7\d{10})|(8\d{10})$"
+                            minlength="" maxlength="" />
                         <span class="form__error">телефон в формате: +7 (123) 456-78-90</span>
                     </div>
                     <div class="form__field">
@@ -38,6 +45,7 @@
                 </fieldset>
             </form>
         </div>
-    </main>     
+    </main>
 </body>
+
 </html>
