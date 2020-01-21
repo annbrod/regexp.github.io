@@ -1,4 +1,4 @@
-# Форма валидации RegExp
+# Форма валидации RegExp v0.1.3
 
 Демо-сайт проекта: https://annbrod.github.io/regexp.github.io/form/
 
